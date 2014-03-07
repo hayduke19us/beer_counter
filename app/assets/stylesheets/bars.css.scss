@@ -1,0 +1,55 @@
+// Place all the styles related to the bars controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {background-color: #ff9f29;}
+
+$red: #cb1903;
+$blue: #5bc0de;
+
+#controls-wrapper{padding: 70px 0 100px 40px;  }
+
+#counter-header {font-size: 200px;}
+
+li {list-style: none;}
+
+#red-button-wrapper {width: 200px;
+                     height: 200px; 
+                     background-color: #cb1903;
+                     border-radius: 100px;
+                     text-align: center;
+                     padding:50px;
+                     color: white;
+                     box-shadow: 1px 1px 1px 1px #965709;
+                     margin-bottom: 50px;
+                     margin-left: 50px;
+}
+
+#blue-button-wrapper {width: 200px;
+                     height: 200px; 
+                     background-color: #5bc0de;
+                     border-radius: 100px;
+                     text-align: center;
+                     padding:50px;
+                     color: white;
+                     box-shadow: 1px 1px 1px 1px #965709;
+                     margin-left: 50px;
+}
+
+#blue-button:hover {text-decoration: none;}
+
+#blue-button-wrapper:hover {background-color: darken($blue, 10%);
+                            border: 2px solid white;
+}
+
+#red-button-wrapper:hover {background-color: darken($red, 10%);
+                           border: 2px solid white;
+}
+
+#footer{height: 200px;
+        background-color: #efefef;
+        padding: 20px;
+
+}
+
+

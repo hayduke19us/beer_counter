@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <li id="counter-header">
+        Beer Counter
+      </li>
+    </div>
+
+    <div id="controls-wrapper">
+      <div class="col-md-3">
+        <div id ="red">
+          <%=link_to raw("<div id='red-button-wrapper'>
+                         <h1>Red</h1>
+                         <h2>#{@red.counter}</h2>
+                        </div>
+                         "), bars_red_path, id: "blue-button" %>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div id = "blue">
+          <%=link_to raw("<div id='blue-button-wrapper'>
+                          <h1>Blue</h1>
+                         <h2>#{@blue.counter}</h2>
+                          </div>
+                           "), bars_blue_path, id: "blue-button" %>
+        </div>
+      </div>
+     </div>
+  </div>
+
+</div>
+<div id="footer">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    <%=image_tag "https://www.onales.com/assets/roa-logo-2014-b8c592728457d55324d3b70b1d2a3c8e.png", class: "img-responsive" %>
+  </div>
+  <div class="col-md-4">
+  </div>
+</div>
