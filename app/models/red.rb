@@ -4,4 +4,8 @@ class Red < ActiveRecord::Base
     self.save
   end
 
+  def winner?
+    self.counter > Blue.first.counter 
+  end
+
 end
